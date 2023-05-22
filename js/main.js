@@ -32,20 +32,20 @@ createApp({
     methods: {
         nextImage() {
             this.activeImage++;
-            if (this.activeImage === this.cartoon.lenght) {
+            if (this.activeImage === this.cartoon.length) {
                 this.activeImage = 0;
             }
             console.log(this.activeImage);
-            console.log(this.cartoon.lenght);
+            console.log(this.cartoon.length);
         },
 
         prevImage() {
             this.activeImage--;
             if (this.activeImage < 0) {
-                this.activeImage = this.cartoon.lenght - 1;
+                this.activeImage = this.cartoon.length - 1;
             }
             console.log(this.activeImage);
-            console.log(this.cartoon.lenght);
+            console.log(this.cartoon.length);
         }
     }
 
